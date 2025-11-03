@@ -4,15 +4,15 @@
 # movies = open("./movies.json", encoding="utf8")
 # ## create variable "data" that represents the enitre movie list
 # data = json.load(movies)
-# for i in range(14117):
+# for i in data:
 #     print(data[q]['title'])
 #     q += 1
 
 import json
-q = 0
 movies = open("./movies.json", encoding="utf8")
 data = json.load(movies)
-for i in range(14117):
-    if "year" != 2014:
-        print(data[q]['title'])
-        q += 1
+x = int(input("Imput?:"))
+for i in data:
+    if int(i['year']) >= x:
+        print(i ['year'], i ['title'])
+        
