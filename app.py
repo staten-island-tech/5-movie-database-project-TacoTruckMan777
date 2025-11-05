@@ -34,4 +34,19 @@
 #     if int(i['year']) >= x:
 #         if int(i['year']) <= x:
 #             print(i ['year'], i ['title'])
-        
+
+# import json
+# movies = open("./movies.json", encoding="utf8")
+# data = json.load(movies)        
+# Search = input("what movie title?")
+# for i in data:
+#     if (i['title']) == Search:
+#         print (i['year'], i['title'], i['cast'], i['genres'])
+
+import json
+movies = open("./movies.json", encoding="utf8")
+data = json.load(movies)        
+Search = input("what movie genres?")
+for i in data:
+    if (i['genres']) == Search:
+        print (i['year'], i['title'], i['cast'], i['genres'])
