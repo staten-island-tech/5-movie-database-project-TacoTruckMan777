@@ -8,11 +8,30 @@
 #     print(data[q]['title'])
 #     q += 1
 
-import json
-movies = open("./movies.json", encoding="utf8")
-data = json.load(movies)
-x = int(input("Imput?:"))
-for i in data:
-    if int(i['year']) >= x:
-        print(i ['year'], i ['title'])
+# import json
+# movies = open("./movies.json", encoding="utf8")
+# data = json.load(movies)
+# x = int(input("Imput?:"))
+# for i in data:
+#     if int(i['year']) >= x:
+#         print(i ['year'], i ['title'])
+
+# import json
+# movies = open("./movies.json", encoding="utf8")
+# data = json.load(movies)
+# x = int(input("Imput?:"))
+# y = int(input("Imput 2?:"))
+# for i in data:
+#     if int(i['year']) >= x:
+#         if int(i['year']) <= y:
+#             print(i ['year'], i ['title'])
+
+# import json
+# movies = open("./movies.json", encoding="utf8")
+# data = json.load(movies)
+# x = int(input("Imput?:"))
+# for i in data:
+#     if int(i['year']) >= x:
+#         if int(i['year']) <= x:
+#             print(i ['year'], i ['title'])
         
