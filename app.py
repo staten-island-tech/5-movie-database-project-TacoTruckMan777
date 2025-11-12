@@ -48,5 +48,5 @@ movies = open("./movies.json", encoding="utf8")
 data = json.load(movies)        
 Search = input("what movie genres?")
 for i in data:
-    if (i['genres']) == Search:
+    if i in (i['genres']) == Search:
         print (i['year'], i['title'], i['cast'], i['genres'])
